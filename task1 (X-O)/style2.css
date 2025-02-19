@@ -1,0 +1,172 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #03073B;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("BG-image.png");
+    background-size: 200px;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 90%;
+    max-width: 450px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 85vh;
+    padding: 25px;
+    border: 3px solid #2CFEFF;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #00f;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.player-card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.player-1 {
+    border: 3px solid #1DD5ED;
+    box-shadow: 0 0 20px #1DD5ED;
+}
+
+.player-2 {
+    border: 3px solid #DF2136;
+    box-shadow: 0 0 20px #DF2136;
+}
+
+.player-card img {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.player-name {
+    color: white;
+    font-size: 10px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px #2CFEFF;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.score {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.player-1-score {
+    color: #1DD5ED;
+}
+
+.player-2-score {
+    color: #DF2136;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+    border: 3px solid #2CFEFF;
+    box-shadow: 0 0 20px #1DD5ED;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid #2CFEFF;
+}
+
+.cell.x {
+    color: #1DD5ED;
+    text-shadow: 0 0 15px #1DD5ED;
+}
+
+.cell.o {
+    color: #F3C64B;
+    text-shadow: 0 0 15px #F3C64B;
+}
+
+.player-name-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    outline: none;
+    width: 80%;
+}
+
+.player-name-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.o-symbol {
+    color: #1DD5ED;
+    text-shadow: 0 0 15px rgba(29, 213, 237, 0.8);
+}
+
+.x-symbol {
+    color: #DF2136;
+    text-shadow: 0 0 15px rgba(223, 33, 54, 0.8);
+}
