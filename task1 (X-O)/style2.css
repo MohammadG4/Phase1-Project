@@ -144,15 +144,15 @@ body::before {
     
 }
 
-.cell.x {
-    color: #1DD5ED;
-    text-shadow: 0 0 15px #1DD5ED;
+.cell.o {
+    color: #DF2136;
+    text-shadow: 0 0 15px #DF2136;
     transition-duration: 0ms;
 }
 
-.cell.o {
-    color: #F3C64B;
-    text-shadow: 0 0 15px #F3C64B;
+.cell.x {
+    color: #1DD5ED;
+    text-shadow: 0 0 15px #1DD5ED;
     transition-duration: 0ms;
 }
 
@@ -184,12 +184,12 @@ body::before {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.o-symbol {
+.x-symbol {
     color: #1DD5ED;
     text-shadow: 0 0 15px rgba(29, 213, 237, 0.8);
 }
 
-.x-symbol {
+.o-symbol {
     color: #DF2136;
     text-shadow: 0 0 15px rgba(223, 33, 54, 0.8);
 }
@@ -201,9 +201,6 @@ body::before {
 .player-symbol.x-symbol{
     margin-top: 10px;
 }
-
-
-
 
 .maindiv{
     display: flex;
@@ -231,14 +228,14 @@ body::before {
     transition: background-color 0.3s ease;
 }
 
-.x {
-    color: #1DD5ED;
-    text-shadow: 0 0 20px rgba(29, 213, 237, 0.9), 0 0 30px rgba(29, 213, 237, 0.8);
+.o {
+    color: #DF2136;
+    text-shadow: 0 0 20px rgba(223, 33, 54, 0.8), 0 0 30px rgba(223, 33, 54, 0.8);
 }
 
-.o {
-    color: #F3C64B;
-    text-shadow: 0 0 25px rgba(243, 198, 75, 0.9), 0 0 30px rgba(243, 198, 75, 0.8);
+.x {
+    color: #1DD5ED;
+    text-shadow: 0 0 25px rgba(29, 213, 237, 0.8), 0 0 30px rgba(29, 213, 237, 0.8);
 }
 
 .game-word {
@@ -275,13 +272,6 @@ body::before {
     transform: scale(1.01);
 }
 .cell:hover{
-
-    /* width: 81px;
-    height: 81px; */
-    
-    /* margin-bottom: 3px;
-    margin-right: 3px; */
     transition-duration: 200ms;
     box-shadow: 0 0 20px #ffffff;
-
 }
