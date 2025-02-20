@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* First Main Div */
+.maindiv1 {
+    height: 80vh;
+    background-image: url("image-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 10%;
+    color: white;
+}
+
+.div1sub1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out, bounce 1.5s infinite;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.info p {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.info p:hover {
+    color: #ff6600;
+}
+
+.info p::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.info p:hover::after {
+    width: 100%;
+}
+
+.div1sub2 {
+    font-weight: 300;
+    max-width: 50%;
+    color: white;
+    font-size: 60px;
+    padding: 20px;
+    border: 2px solid white;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 3px;
+}
+
+/* Second Main Div */
+.maindiv2 {
+    display: flex;
+    gap: 50px;
+    padding: 5% 10%;
+    position: relative;
+}
+
+.image-container {
+    width: 60%;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.text-container {
+    background-color: white;
+    position: absolute;
+    bottom: 11%;
+    right: 12%;
+    width: 40%;
+    height: fit-content;
+    padding: 50px 100px 0px 80px;
+}
+
+.text-container h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.text-container p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #555;
+}
+
+@media (min-width:500px){
+
+}
