@@ -212,3 +212,255 @@ body {
 }
 
 /* Media Queries End */
+
+
+
+/* Second Half of the Design */
+.home{
+    width: 80vw;
+    /* height: 10vh; */
+    margin:auto;
+    margin-top: 90px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:lighter;
+
+}
+.grid-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+
+
+  }
+  .grid-title h2{
+    font-size: 250%;
+    font-weight:lighter;
+  }
+  
+  .grid-title button {
+    padding: 8px 40px;
+    border: 2px solid black;
+    background: transparent;
+    letter-spacing: 5px;
+    cursor: pointer;
+    font-size: 1vw;
+    transition-duration: 400ms;
+    
+}
+.grid-title button:hover{
+    background: rgb(239, 239, 239);
+    transition-duration: 400ms;
+    box-shadow: 0 0 10px rgb(155, 155, 155);
+
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .grid-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    /* box-shadow: -1 -2 500px  rgba(0, 0, 0, 0.7); */
+
+    transition-duration: 600ms;
+  }
+  .grid-item img:hover {
+    /* width: 100%; */
+    height: 450px;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    transition-duration: 400ms;
+  }
+  
+  .grid-item h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    font-size: 32px;
+
+    /* max-width: 150px; */
+    font-weight:lighter;
+
+  }
+
+
+
+
+
+  /* foooooooooooooooooter */
+  .footer {
+    background: black;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* text-transform: uppercase; */
+    /* gap: 24px; */
+}
+
+.logo {
+      text-transform: lowercase;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    animation: fadeIn 2s ease-in-out, bounce 1.5s infinite;
+    
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+    text-decoration:underline;
+
+  }
+/* .footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff6600;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+
+  } */
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    /* animation: fadeIn 2s ease-in-out, bounce 1.5s infinite; */
+
+  }
+  .social-icons img:hover {
+    width: 24px;
+    height: 24px;
+    /* color: gray; */
+
+  }
+  
+  .copyright {
+    color: gray;
+    text-align: right;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+      gap: 40px;
+    }
+  
+    .footer-left, .footer-right {
+      align-items: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .copyright {
+      text-align: center;
+    }
+  }
+.unique{
+    display: none;
+}
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .grid-title {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .unique {
+        display: block;
+        margin: auto;
+        padding: 8px 40px;
+        border: 2px solid black;
+        background: transparent;
+        letter-spacing: 5px;
+        cursor: pointer;
+        font-size: 4vw;
+        margin-top: 10vw;
+        transition-duration: 400ms;
+        
+    }
+    .unique:hover{
+        background: rgb(239, 239, 239);
+        transition-duration: 400ms;
+        box-shadow: 0 0 10px rgb(155, 155, 155);
+    
+      }
+      .grid-title button{
+        display: none;
+      }
+    
+        
+  .grid-item img {
+    width: 100%;
+    height: 200px;
+    
+
+    /* box-shadow: -1 -2 500px  rgba(0, 0, 0, 0.7); */
+
+    transition-duration: 600ms;
+  }
+  .grid-item img:hover {
+    /* width: 100%; */
+    height: 450px;
+    object-fit: cover;
+    box-shadow: 0 0 40px rgb(0, 0, 0);
+    transition-duration: 400ms;
+  }
+  
+  .grid-item h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    color: white;
+    font-size: 32px;
+  }
+
+}
