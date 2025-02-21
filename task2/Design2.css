@@ -158,24 +158,22 @@ body {
         font-size: 20px;
     }
 
-    .info {
+    .main-div1 div > div p{
         display: none;
     }
 
-    .main-div1 div:first-child::after {
-        content: '';
+    .main-div1 div > div::after {
+        content: '☰';
         display: block;
-        width: 24px;
-        height: 24px;
-        background: url('pngegg.png');
-        background-size: cover;
+        transform: scale(2);
         cursor: pointer;
     }
 
     .main-div1 > div:last-child {
         max-width: 100%;
-        font-size: 50px;
-        padding: 10px;
+        font-size: 40px;
+        padding: 10%;
+        text-transform: uppercase;
         border: 1px solid white;
         line-height: 1.1;
         letter-spacing: 2px;
