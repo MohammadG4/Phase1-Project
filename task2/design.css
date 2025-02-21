@@ -10,7 +10,11 @@ body {
     color: #333;
 }
 
-.maindiv1 {
+
+
+/* Main Division Number 1 Start */
+
+.main-div1 {
     height: 80vh;
     background-image: url("image-hero.jpg");
     background-size: cover;
@@ -22,35 +26,38 @@ body {
     color: white;
 }
 
-.div1sub1 {
+.main-div1 div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.main-div1 > div > h1 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    animation: fadeIn 2s ease-in-out, bounce 1.5s infinite;
+    transition: 0.3s ease;
 }
 
-.info {
+.main-div1 > div > h1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-div1 > div > div {
     display: flex;
     gap: 20px;
+
 }
 
-.info p {
+.main-div1 > div > div p:hover {
+    color: #ff6600;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
     position: relative;
 }
 
-.info p:hover {
-    color: #ff6600;
-}
-
-.info p::after {
+.main-div1 > div > div p::after {
     content: '';
     position: absolute;
     width: 0;
@@ -61,11 +68,11 @@ body {
     transition: width 0.3s ease-in-out;
 }
 
-.info p:hover::after {
+.main-div1 > div > div p:hover::after {
     width: 100%;
 }
 
-.div1sub2 {
+.main-div1 > div:last-child {
     font-weight: 300;
     max-width: 50%;
     color: white;
@@ -77,33 +84,41 @@ body {
     letter-spacing: 3px;
 }
 
-.maindiv2 {
+/* Main Division Number 1 End */
+
+
+
+
+
+/* Main Division Number 2 Start */
+
+.main-div2 {
     display: flex;
     gap: 50px;
     padding: 5% 10%;
     position: relative;
 }
 
-.image-container {
+.main-div2 div:last-child { /*.image-container */
     width: 60%;
 }
 
-.image-container img {
+.main-div2 div:last-child img {
     width: 100%;
     display: block;
 }
 
-.text-container {
+.main-div2 > div:first-child { /* .text-container */
     background-color: white;
     position: absolute;
     bottom: 11%;
     right: 12%;
     width: 40%;
     height: fit-content;
-    padding: 50px 100px 0px 80px;
+    padding: 50px 100px 0 80px;
 }
 
-.text-container h2 {
+.main-div2 > div:first-child h2 {
     font-size: 40px;
     font-weight: 300;
     margin-bottom: 10%;
@@ -111,24 +126,35 @@ body {
     letter-spacing: 3px;
 }
 
-.text-container p {
+.main-div2 > div:first-child p {
     font-size: 12px;
     line-height: 1.5;
     color: #555;
 }
 
+/* Main Division Number 2 End */
+
+
+
+
+
+
+
+
+/* Media Queries Start */
+
 @media (max-width: 400px) {
-    .maindiv1 {
+    .main-div1 {
         height: 100vh;
         padding: 5% 5%;
     }
 
-    .div1sub1 {
+    .main-div1 div:first-child {
         flex-direction: row;
         gap: 20px;
     }
 
-    .logo {
+    h1 {
         font-size: 20px;
     }
 
@@ -136,7 +162,7 @@ body {
         display: none;
     }
 
-    .div1sub1::after {
+    .main-div1 div:first-child::after {
         content: '';
         display: block;
         width: 24px;
@@ -146,7 +172,7 @@ body {
         cursor: pointer;
     }
 
-    .div1sub2 {
+    .main-div1 > div:last-child {
         max-width: 100%;
         font-size: 50px;
         padding: 10px;
@@ -156,19 +182,19 @@ body {
         margin-bottom: 50%;
     }
 
-    .maindiv2 {
+    .main-div2 {
         flex-direction: column;
         gap: 20px;
         padding: 5% 5%;
     }
 
-    .image-container {
+    .main-div2 div:last-child {
         margin-top: 20%;
         width: 100%;
         order: 1;
     }
 
-    .text-container {
+    .main-div2 > div:first-child {
         position: static;
         width: 100%;
         padding: 5%;
@@ -177,12 +203,14 @@ body {
         text-align: center;
     }
 
-    .text-container h2 {
+    .main-div2 > div:first-child h2 {
         font-size: 30px;
         margin-bottom: 5%;
     }
 
-    .text-container p {
+    .main-div2 > div:first-child p {
         font-size: 14px;
     }
 }
+
+/* Media Queries End */
