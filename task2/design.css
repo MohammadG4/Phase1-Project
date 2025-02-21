@@ -119,6 +119,72 @@ body {
     color: #555;
 }
 
-@media (min-width:500px){
+@media (max-width: 400px) {
+    .maindiv1 {
+        height: 100vh;
+        padding: 5% 5%;
+    }
 
+    .div1sub1 {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .div1sub1::after {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url('pngegg.png');
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .div1sub2 {
+        max-width: 100%;
+        font-size: 50px;
+        padding: 10px;
+        border: 1px solid white;
+        line-height: 1.1;
+        letter-spacing: 2px;
+        margin-bottom: 50%;
+    }
+
+    .maindiv2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 5% 5%;
+    }
+
+    .image-container {
+        margin-top: 20%;
+        width: 100%;
+        order: 1;
+    }
+
+    .text-container {
+        position: static;
+        width: 100%;
+        padding: 5%;
+        background-color: transparent;
+        order: 2;
+        text-align: center;
+    }
+
+    .text-container h2 {
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
 }
