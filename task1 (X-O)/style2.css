@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     font-family: 'Press Start 2P', cursive;
     display: flex;
@@ -7,7 +8,6 @@ body {
     background-color: #03073B;
     height: 100vh;
     position: relative;
-    /* overflow: hidden; */
     margin: 0;
     overflow-x: hidden; 
     overflow-y: auto; 
@@ -40,7 +40,6 @@ body::before {
     border: 3px solid #2CFEFF;
     border-radius: 20px;
     box-shadow: 0 0 30px #00f;
-    /* margin-top: 60px; */
     margin: auto;
     transition-duration: 200ms;
 }
@@ -167,6 +166,7 @@ body::before {
     outline: none;
     width: 80%;
 }
+
 .player-name-input-main {
     background: transparent;
     border: none;
@@ -194,10 +194,10 @@ body::before {
     text-shadow: 0 0 15px rgba(223, 33, 54, 0.8);
 }
 
-
 .player-symbol.o-symbol{
     margin-top: 10px;
 }
+
 .player-symbol.x-symbol{
     margin-top: 10px;
 }
@@ -243,7 +243,6 @@ body::before {
     text-shadow: 0 0 20px rgba(223, 33, 198, 0.9), 0 0 30px rgba(223, 33, 198, 0.8);
 }
 
-
 .button {
     font-family: 'Press Start 2P', cursive;
     font-size: 14px;
@@ -261,16 +260,18 @@ body::before {
     transition: 0.3s;
     box-shadow: 0px 0px 10px #F3C64B;
 }
-#btn-start, #btn-new
-{
+
+#btn-start, #btn-new{
     margin: 0;
 }
+
 .button:hover {
     background-color: #ffcc00;
     color: white;
     box-shadow: 0px 0px 20px rgba(255, 223, 0, 1);
     transform: scale(1.01);
 }
+
 .cell:hover{
     transition-duration: 200ms;
     box-shadow: 0 0 20px #ffffff;

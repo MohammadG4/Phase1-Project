@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* First Main Div */
 .maindiv1 {
     height: 80vh;
     background-image: url("image-hero.jpg");
@@ -78,7 +77,6 @@ body {
     letter-spacing: 3px;
 }
 
-/* Second Main Div */
 .maindiv2 {
     display: flex;
     gap: 50px;
